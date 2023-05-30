@@ -8,17 +8,12 @@ html {
   background-color: var(--gray);
 }
 
-/* @font-face {
-  font-family: 'GT-America-LCGV-Standard-Regular', sans-serif;
-  src: url(/font-family/GT-America-LCGV-Standard-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-style:normal
-} */
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 body {
   background-color: var(--gray);
   cursor: default;
-  font-family: system-ui, arial, sans-serif;
+  font-family: 'Karla', system-ui, arial, sans-serif;
   font-size: 21px;
   letter-spacing: 0.03em;
   line-height: 1.35;
