@@ -79,6 +79,7 @@ function setCityText() {
     "Melbourne,",
     "Narrm,",
     "Collingwood,",
+    "Yallabirrang,",
   ];
   
   const title_element = document.querySelector(".js-city-name");
