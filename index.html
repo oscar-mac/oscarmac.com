@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#f5f5f5">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div class="column-one">
@@ -20,30 +20,8 @@
         <a href="" class="js-email-copy">oscar@oscarmac.com</a>
       </p>
       <p>
-        I am currently a <span class="job-title js-job-title">full-stack developer</span> at <a href="https://www.linkedbyair.net/" target="_blank">Linked by Air</a>, a design and technology studio based in Brooklyn, New York. My formative background is in graphic design, and I hold a B.F.A. in Communication Design from Parsons School of Design. Before university, I studied <a href="https://youtube.com/playlist?list=PLIWX-WPvtuHnn1q86hriWpxojsprCoOEd" target="_blank">music</a> at the Booker T. Washington High School for the Performing and Visual Arts in Dallas, Texas. In my free time, I like to <a href="https://www.instagram.com/jack__rieger__food/" target="_blank">cook</a>.
+        I am currently a <span class="job-title js-job-title">full-stack developer</span> from <span class="city-name js-city-name">Melbourne,</span> Australia.
       </p>
-      <p>
-        I work on a wide range of projects at Linked by Air. These are some of the projects I have contributed to the most:
-      </p><ul>
-        <li>
-          <a href="https://samfoxschool.wustl.edu/" target="_blank">Sam Fox School of Design &amp; Visual Arts</a>
-        </li>
-        <li>
-          <a href="https://www.architecture.yale.edu/advanced-technology" target="_blank">Yale School of Architecture Advanced Technology</a>
-        </li>
-        <li>
-          <a href="https://www.d4bl.org" target="_blank">Data for Black Lives</a>
-        </li>
-        <li>
-          <a href="https://outofmany.nationalacademy.org/" target="_blank">Out of Many: National Academy of Design</a>
-        </li>
-        <li>
-          <a href="https://www.linkedbyair.net/projects/90-deborah-berke-partners-website" target="_blank">Deborah Berke Partners</a>
-        </li>
-        <li>
-          <a href="https://www.arch.columbia.edu/" target="_blank">Columbia GSAPP</a>
-        </li>
-      </ul>
       <p></p>
       <p>
         Oscar Mac acknowledges the Wurundjeri people of the Kulin Nation, the traditional owners of this land, and pay our respect to their Elders, past, present, and emerging.
@@ -58,9 +36,9 @@
       function setTime() {
         const y = 2023; // year
         const m = (5 - 1); // month (zero-indexed)
-        const d = 9; // day
-        const h = 14; // hour (24 hr time)
-        const n = 30; // minute
+        const d = 30; // day
+        const h = 16; // hour (24 hr time)
+        const n = 18; // minute
         const updated_at = new Date(y, m, d, h, n, 0);
         const today = new Date();
         const time_since = today - updated_at;
@@ -105,12 +83,9 @@
       
       function setJobText() {
         const titles = [
-          "coder",
+          "designer",
           "developer",
-          "full-stack developer",
-          "programmer",
-          "software engineer",
-          "technologist",
+          "mobile developer",
           "web developer",
           "middle-end developer"
         ];
@@ -133,10 +108,37 @@
           title_element.innerText = selection;
         });
       }
-      
+
+      function setCityText() {
+        const titles = [
+          "Melbourne,",
+          "Narrm,",
+          "Collingwood,",
+        ];
+        
+        const title_element = document.querySelector(".js-city-name");
+        
+        function getCityName() {
+          return titles[Math.floor(Math.random() * titles.length)];
+        }
+        
+        title_element.addEventListener("click", function (e) {
+          const current = title_element.innerText;
+          let selection = getCityName();
+          
+          while (current === selection) {
+            console.log(current, selection);
+            selection = getCityName();
+          }
+          
+          title_element.innerText = selection;
+        });
+      }
+
       (function run() {
         setEmailCopy();
         setJobText();
+        setCityText();
         setTime();
       })();
       
