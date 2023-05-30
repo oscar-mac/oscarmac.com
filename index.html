@@ -1,177 +1,145 @@
-<!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
-
-        <link rel="stylesheet" href="style.css">
-
-        <script src="script.js"></script>
-
-        <title>National Gallery Victoria | Interactive Experience Research Project</title>
-        <link rel="shortcut icon" href="Images/favicon.png"/>  <!--    WHAT IS THE DIFFERENCE BETWEEN "HREF" AND "SRC"? -->
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Oscar Mac is a web developer based in New York.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Oscar Mac</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#f5f5f5">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div class="column-one">
+      <p>
+        Oscar Mac
+        <br>
+        <a href="" class="js-email-copy">oscar@oscarmac.com</a>
+      </p>
+      <p>
+        I am currently a <span class="job-title js-job-title">full-stack developer</span> at <a href="https://www.linkedbyair.net/" target="_blank">Linked by Air</a>, a design and technology studio based in Brooklyn, New York. My formative background is in graphic design, and I hold a B.F.A. in Communication Design from Parsons School of Design. Before university, I studied <a href="https://youtube.com/playlist?list=PLIWX-WPvtuHnn1q86hriWpxojsprCoOEd" target="_blank">music</a> at the Booker T. Washington High School for the Performing and Visual Arts in Dallas, Texas. In my free time, I like to <a href="https://www.instagram.com/jack__rieger__food/" target="_blank">cook</a>.
+      </p>
+      <p>
+        I work on a wide range of projects at Linked by Air. These are some of the projects I have contributed to the most:
+      </p><ul>
+        <li>
+          <a href="https://samfoxschool.wustl.edu/" target="_blank">Sam Fox School of Design &amp; Visual Arts</a>
+        </li>
+        <li>
+          <a href="https://www.architecture.yale.edu/advanced-technology" target="_blank">Yale School of Architecture Advanced Technology</a>
+        </li>
+        <li>
+          <a href="https://www.d4bl.org" target="_blank">Data for Black Lives</a>
+        </li>
+        <li>
+          <a href="https://outofmany.nationalacademy.org/" target="_blank">Out of Many: National Academy of Design</a>
+        </li>
+        <li>
+          <a href="https://www.linkedbyair.net/projects/90-deborah-berke-partners-website" target="_blank">Deborah Berke Partners</a>
+        </li>
+        <li>
+          <a href="https://www.arch.columbia.edu/" target="_blank">Columbia GSAPP</a>
+        </li>
+      </ul>
+      <p></p>
+      <p>
+        Oscar Mac acknowledges the Wurundjeri people of the Kulin Nation, the traditional owners of this land, and pay our respect to their Elders, past, present, and emerging.
+      </p>
+      <p class="font-small">
+        Updated: <span class="js-last-updated">A week ago</span>
+      </p>
+    </div>
     
-    <body>
-        <header>
-            <h1>National Gallery Victoria</h1>
-            <hr style="border-top-color:black;border-top-width:2.5px;"/>
-
-            <h1>Interactive Experience Research Project</h1>
-            <hr style="border-top-color:black;border-top-width:2.5px;"/>
-           
-            <h3>s3906766</h3>
-
-            <a href="https://www.ngv.vic.gov.au" target="_blank"><img src="Images/screenshot.jpg" width="1500px"></href></a>
-        </header>
+    <script>
+      
+      function setTime() {
+        const y = 2023; // year
+        const m = (5 - 1); // month (zero-indexed)
+        const d = 9; // day
+        const h = 14; // hour (24 hr time)
+        const n = 30; // minute
+        const updated_at = new Date(y, m, d, h, n, 0);
+        const today = new Date();
+        const time_since = today - updated_at;
         
-        <section>
-            
-            <h2>Week 2 Questions</h2>
-            <hr style="border-top-color:black;border-top-width:2.5px;"/>
-
-            <ol>
-
-                <li>
-                    <h4>What was the first thing you paid attention to when interacting with the experience?</h4>
-                    <p>Carousel</p>
-                </li>
-
-                <li>
-                    <h4>Spend two minutes with the experience and create a list of each of your discrete actions.</h4>
-                    <p>
-                        <ol>
-                            <li>Enter URL address into search bar of UI</li>
-                            <li>Interact with carousel of featured exhibitions.</li>
-                            <li>Scroll down landing page to look at section of exhibitions</li>
-                            <li>Click into Exhibition 1</li>
-                            <li>Scroll down page. Searching for quick feeler of exhibition</li>
-                            <li>Scan through Exhibition statement.</li>
-                            <li>Go back</li>
-                            <li>Click into Exhibiition 2</li>
-                            <li>Scroll down page</li>
-                            <li>Click through gallery of Select Works to get a general picture of the exhibition/collection</li>
-                            <li>Scan through Exhibition description</li>
-                            <li>Look for tickets, scroll up</li>
-                            <li>Notice free entry. No tickets required</li>
-
-                        </ol>
-                    </p>
-                </li>
-
-                <li>
-                    <h4>What part of the experience did you spend the most time engaging with?</h4>
-                    <p>Individual exhibition pages</p>
-                </li>
-
-                <li>
-                    <h4>What was the most common action in your two minute interaction with the experience?</h4>
-                    <p>
-                        Scrolling up and down looking for information. In the exhibition page: the user would rather have a visual preview of the exhibition before reading a lengthy description. 
-                        The flow of information should reflect this order. Not unlike a piece of artwork in a gallery, the viewer is likely to look at the work before reading its description.
-                    </p>
-                </li>
-
-                <li>
-                    <h4>What is your impression of the intended primary goal of the interactive experience?</h4>
-                    <p>To easily access exhibition information. </p>
-                </li>
-
-                <li>
-                    <h4>What is your impression of how the interactive experience communicates its primary goal?</h4>
-                    <p>
-                        First-time visitors are most likely visiting the website to look for an exhibition that interests them. Therefore, it is important to make it easy for them to find relevant information 
-                        without having to read through long exhibition descriptions. The current landing page does not provide any descriptions for the exhibitions, which means that users must click into 
-                        each individual page to learn more. Providing brief descriptions of each exhibition on the landing page would allow users to quickly identify which exhibitions they're interested in visiting.
-                    </p>
-                </li>
-
-                <li>
-                    <h4>What is your impression of how the experience should be interacted with over time? (For how long and how many different times)</h4>
-                    <p>
-                        The majority of users first encounter of the website will be quickly accessing information on current exhibitions. These users are likely to return to the website for new information at a 
-                        later time e.g: make an account, look at other events.
-                    </p>
-                </li>
-
-                <li>
-                    <h4>What is your impression of how the interactive experience communicates how it should be interacted with over time?</h4>
-                    <p>
-                        The carousel of select exhibitions and the first section of the landing page both indicate that the primary user goal is to access information about exhibitions. There is no clear 
-                        path for users to follow once they have obtained this information. Provide clear and concise user journeys that guide the user towards the next steps they should take.
-                    </p>
-                        
-                    <p>Segregating menus in the navigation bar for first-time and returning users could make this user journey more concise from the beginning.</p>
-                </li>
-
-            </ul>
-            <hr style="border-top-color:black;border-top-width:2.5px;"/>
-
-
-              
-           
-        </section>
-
-        <section>
-
-            <h2>Week 3 Questions</h2>
-            <hr style="border-top-color:black;border-top-width:2.5px;"/>
-
-            <ul>
-                <li>
-                   <h4>What other media forms (digital or otherwise) does the experience reference?</h4>
-                   <p>
-                    The use of whitespace around select exhibitions on the landing page emulates the atmosphere of the gallery in which the works are the visitor's primary focus.
-                    By isolating the subject in this way, the viewers full focus is captured, diverting attention from any other distractions.
-                   </p>
-
-                </li>
-                
-                <li>
-                    <h4>What does this reference or references suggest to you about how you should act when engaging with it?</h4>
-                    <p>
-                        The use of whitespace draws heightened attention to the subject (exhibitions on the landing page), naturally directing the user to engage with it.
-                    </p>
-                </li>
-
-                <li>
-                    <h4>What does this reference or references suggest to you about how you should feel when engaging with it?</h4>
-                    <p>
-                        Whitespace is used to draw attention to the subject and create a sense of engagement, effectively separating it from the surrounding content. 
-                        This whitespace also allows the eyes to rest while the brain processes information, preventing the user from feeling overwhelmed.
-                    </p>
- 
-                 </li>
-
-                 <li>
-                    <h4>What is the most frustrating element of the interaction to you and what makes it frustrating?</h4>
-                    <p>
-                        The lack of a clear path for users to follow on the website, leaves the first-time user feeling disoriented.
-                        Without proper guidance, navigating the site can become challenging and overwhelming, causing 
-                        frustration for users.
-
-                        A first-time user is likely looking for basic information but must mentally sort through the surplus of content presented on the website.
-                    </p>
-
-                </li>
-                
-                 <li>
-                    <h4>What is the most satisfying element of the interaction to you and what makes it satisfying?</h4>
-                    <p>
-                        Subtle feedback on hover satifies the user, indicating that an element can be clicked or interacted with in some way. This feedback makes the experience feel more dynamic and engaging. 
-                        This feedback is consistent across the website, creating a better user experience by making it easier for the user to navigate and interact with the website.      
-                    </p>
- 
-                 </li>
-
-            </ol>
-            <hr style="border-top-color:black;border-top-width:2.5px;"/>
-            
-
-
-        </section>
-
+        let time_phrase;
+        const hour_ms = 3600000;
+        const day_ms = 86400000;
+        const week_ms = 1209600000;
+        const month_ms = 2628000000;
+        
+        if (time_since < hour_ms) time_phrase = "few moments"
+        else if (time_since < day_ms) time_phrase = "few hours"
+        else if (time_since < (day_ms * 2)) time_phrase = "day"
+        else if (time_since < week_ms) time_phrase = "few days"
+        else if (time_since < (week_ms * 2)) time_phrase = "week"
+        else if (time_since < month_ms) time_phrase = "few weeks"
+        else if (time_since < (month_ms * 2)) time_phrase = "month"
+        else time_phrase = "months";
+        
+        document.querySelector(".js-last-updated").innerText = `A ${time_phrase} ago`;
+      }
+      
+      function setEmailCopy() {
+        const el = document.querySelector(".js-email-copy");
+        
+        el.addEventListener("click", function (e) {
+          e.preventDefault();
+          
+          const text = el.innerText;
+          
+          navigator.clipboard.writeText(text).then(function () {
+            el.innerText = "Email copied!"
+          }, function (err) {
+            console.error('Could not copy email.', err);
+          });
+          
+          setTimeout(function () {
+            el.innerText = text;
+          }, 2000);
+        })
+      }
+      
+      function setJobText() {
+        const titles = [
+          "coder",
+          "developer",
+          "full-stack developer",
+          "programmer",
+          "software engineer",
+          "technologist",
+          "web developer",
+          "middle-end developer"
+        ];
+        
+        const title_element = document.querySelector(".js-job-title");
+        
+        function getJobTitle() {
+          return titles[Math.floor(Math.random() * titles.length)];
+        }
+        
+        title_element.addEventListener("click", function (e) {
+          const current = title_element.innerText;
+          let selection = getJobTitle();
+          
+          while (current === selection) {
+            console.log(current, selection);
+            selection = getJobTitle();
+          }
+          
+          title_element.innerText = selection;
+        });
+      }
+      
+      (function run() {
+        setEmailCopy();
+        setJobText();
+        setTime();
+      })();
+      
+    </script>
     
-    </body>
-    
-</html>
+  </body></html>
