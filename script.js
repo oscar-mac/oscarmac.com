@@ -50,6 +50,7 @@ function setJobText() {
   const titles = [
     "designer",
     "developer",
+    "coder",
     "mobile developer",
     "web developer",
     "front-end developer",
