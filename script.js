@@ -55,6 +55,7 @@ function setJobText() {
     "middle-end developer",
     "front-end developer",
     "designer-developer",
+    "product designer",
   ];
   
   const title_element = document.querySelector(".js-job-title");
