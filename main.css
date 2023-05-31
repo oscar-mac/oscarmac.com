@@ -8,12 +8,10 @@ html {
   background-color: var(--gray);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-
 body {
   background-color: var(--gray);
   cursor: default;
-  font-family: 'Karla', system-ui, arial, sans-serif;
+  font-family: system-ui, arial, sans-serif;
   font-size: 21px;
   letter-spacing: 0.03em;
   line-height: 1.35;
