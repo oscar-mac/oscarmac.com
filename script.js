@@ -1,9 +1,9 @@
 function setTime() {
   const y = 2023; // year
   const m = (5 - 1); // month (zero-indexed)
-  const d = 30; // day
-  const h = 19; // hour (24 hr time)
-  const n = 4; // minute
+  const d = 31; // day
+  const h = 11; // hour (24 hr time)
+  const n = 35; // minute
   const updated_at = new Date(y, m, d, h, n, 0);
   const today = new Date();
   const time_since = today - updated_at;
@@ -52,7 +52,9 @@ function setJobText() {
     "developer",
     "mobile developer",
     "web developer",
-    "middle-end developer"
+    "middle-end developer",
+    "front-end developer",
+    "designer-developer",
   ];
   
   const title_element = document.querySelector(".js-job-title");
@@ -79,7 +81,7 @@ function setCityText() {
     "Melbourne,",
     "Narrm,",
     "Collingwood,",
-    "Yallabirrang,",
+    "Yállabirrang,",
   ];
   
   const title_element = document.querySelector(".js-city-name");
