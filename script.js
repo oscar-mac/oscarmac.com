@@ -52,7 +52,6 @@ function setJobText() {
     "developer",
     "mobile developer",
     "web developer",
-    "middle-end developer",
     "front-end developer",
     "designer-developer",
     "product designer",
