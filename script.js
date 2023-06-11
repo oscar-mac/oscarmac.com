@@ -50,11 +50,13 @@ function setJobText() {
   const titles = [
     "designer",
     "developer",
+    "product designer",
+    "interface designer",
     "mobile developer",
     "web developer",
     "front-end developer",
     "designer-developer",
-    "product designer",
+    
   ];
   
   const title_element = document.querySelector(".js-job-title");
