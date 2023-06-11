@@ -51,7 +51,7 @@ function setJobText() {
     "designer",
     "developer",
     "product designer",
-    "interface designer",
+    "human interface designer",
     "mobile developer",
     "web developer",
     "front-end developer",
