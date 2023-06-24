@@ -1,9 +1,9 @@
 function setTime() {
   const y = 2023; // year
-  const m = (5 - 1); // month (zero-indexed)
-  const d = 31; // day
+  const m = (6 - 1); // month (zero-indexed)
+  const d = 24; // day
   const h = 11; // hour (24 hr time)
-  const n = 35; // minute
+  const n = 03; // minute
   const updated_at = new Date(y, m, d, h, n, 0);
   const today = new Date();
   const time_since = today - updated_at;
