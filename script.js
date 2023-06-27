@@ -97,9 +97,7 @@ function setJobText() {
 function setCityText() {
   const titles = [
     "Melbourne,",
-    "Narrm,",
-    "Collingwood,",
-    "Yállabirrang,",
+    "37.8136° S, 144.9631° E,",
   ];
   
   const title_element = document.querySelector(".js-city-name");
