@@ -1,9 +1,25 @@
+function checkTime(e) {
+  return e < 10 && (e = "0" + e), e
+}
+function startTime() {
+  var e = new Date,
+      t = e.getHours(),
+      n = e.getMinutes(),
+      i = e.getSeconds();
+  n = checkTime(n),
+  i = checkTime(i),
+  document.getElementById("currentTime").innerHTML = t + ":" + n + ":" + i;
+  setTimeout(function() {
+      startTime()
+  }, 500)
+}
+
 function setTime() {
   const y = 2023; // year
   const m = (6 - 1); // month (zero-indexed)
-  const d = 24; // day
-  const h = 11; // hour (24 hr time)
-  const n = 03; // minute
+  const d = 27; // day
+  const h = 15; // hour (24 hr time)
+  const n = 23; // minute
   const updated_at = new Date(y, m, d, h, n, 0);
   const today = new Date();
   const time_since = today - updated_at;
@@ -110,4 +126,5 @@ function setCityText() {
   setJobText();
   setCityText();
   setTime();
+  startTime();
 })();

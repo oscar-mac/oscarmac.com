@@ -16,11 +16,21 @@ body {
   font-size: 21px;
   letter-spacing: 0.03em;
   line-height: 1.35;
-  max-width: 670px;
+  /* max-width: 670px; */
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
+}
+
+/* #title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+} */
+
+#currentTime {
+  float: right;
 }
 
 .dark-mode {
@@ -68,7 +78,7 @@ li:before {
 
 .column-one {
   margin-bottom: 1rem;
-  width: 100%;
+  max-width: 670px;
 }
 
 .column-one p {
