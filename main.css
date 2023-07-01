@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "Gerstner-Programm";
+  src: url('Gerstner-Programm/woff2/Gerstner-ProgrammRegular.woff2') format('woff2'),
+    url('Gerstner-Programm/woff/Gerstner-ProgrammRegular.woff') format('woff'),
+    url('Gerstner-Programm/ttf/Gerstner-ProgrammRegular.ttf') format('truetype')}
+
 html {
   --blue: #0000ff;
   --gray: #eeeeee;
@@ -12,7 +18,7 @@ html {
 body {
   background-color: var(--gray);
   cursor: default;
-  font-family: system-ui, arial, sans-serif;
+  font-family: Gerstner-Programm, arial, system-ui, sans-serif;
   font-size: 21px;
   letter-spacing: 0.03em;
   line-height: 1.35;
