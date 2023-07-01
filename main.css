@@ -19,7 +19,7 @@ body {
   background-color: var(--gray);
   cursor: default;
   font-family: Gerstner-Programm, arial, system-ui, sans-serif;
-  font-size: 23px;
+  font-size: 21px;
   letter-spacing: 0.03em;
   line-height: 1.35;
   /* max-width: 670px; */
@@ -107,7 +107,7 @@ li:before {
 
 @media only screen and (min-width: 576px) {
   body {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   ul {
