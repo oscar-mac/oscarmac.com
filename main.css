@@ -19,7 +19,7 @@ body {
   background-color: var(--gray);
   cursor: default;
   font-family: Gerstner-Programm, arial, system-ui, sans-serif;
-  font-size: 21px;
+  font-size: 26px;
   letter-spacing: 0.03em;
   line-height: 1.35;
   /* max-width: 670px; */
